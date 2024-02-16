@@ -1,0 +1,987 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />  
+  <link rel="stylesheet" href="vedic.css" />
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="menu.css">
+    <title>Vedic Scripts</title>
+  </head>
+  <body>
+    <div class="main-container">
+    <nav class="sidebar">
+      <div class="sidebar-top-wrapper">
+        <div class="sidebar-top">
+          <a href="#" class="logo-wrapper">
+            <img src="/Assets/Logo/circleLogo.png" alt="" class="logo-small">
+            <span class="hide company-name">Sakha</span>
+          </a>
+        </div>
+        <button class="expand-btn" type="button">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="exp-btn" role="img">
+            <title id="exp-btn">Expand/Collapse Menu</title>
+            <path d="M6.00979 2.72L10.3565 7.06667C10.8698 7.58 10.8698 8.42 10.3565 8.93333L6.00979 13.28"
+              stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="search__wrapper">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="search-icon" role="img">
+          <title id="search-icon">Search</title>
+          <path
+            d="M9 9L13 13M5.66667 10.3333C3.08934 10.3333 1 8.244 1 5.66667C1 3.08934 3.08934 1 5.66667 1C8.244 1 10.3333 3.08934 10.3333 5.66667C10.3333 8.244 8.244 10.3333 5.66667 10.3333Z"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <input type="text" aria-labelledby="search-icon">
+      </div>
+      <div class="sidebar-links">
+        <ul>
+          <li><a href="#upanishads" class="tooltip">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M6 2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 1 0 0-2h-2v-2h2c.6 0 1-.4 1-1V4a2 2 0 0 0-2-2h-8v16h5v2H7a1 1 0 1 1 0-2h1V2H6Z" clip-rule="evenodd"/>
+            </svg>          
+            <span class="link hide">Upanishad</span>
+            <span class="tooltip__content">Upanishad</span>
+          </a>
+        </li>
+          <li><a href="#ramayana" class="tooltip">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M6 2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 1 0 0-2h-2v-2h2c.6 0 1-.4 1-1V4a2 2 0 0 0-2-2h-8v16h5v2H7a1 1 0 1 1 0-2h1V2H6Z" clip-rule="evenodd"/>
+            </svg>          
+            <span class="link hide">Ramayana</span>
+            <span class="tooltip__content">Ramayana</span>
+          </a>
+        </li>
+          <li><a href="#shrimad-bhagvadgita" class="tooltip">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M6 2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 1 0 0-2h-2v-2h2c.6 0 1-.4 1-1V4a2 2 0 0 0-2-2h-8v16h5v2H7a1 1 0 1 1 0-2h1V2H6Z" clip-rule="evenodd"/>
+            </svg>          
+            <span class="link hide">Bhagvadgita</span>
+            <span class="tooltip__content">Bhagvadgita</span>
+          </a>
+        </li>
+          <li><a href="#all-vedas" class="tooltip"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M6 2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 1 0 0-2h-2v-2h2c.6 0 1-.4 1-1V4a2 2 0 0 0-2-2h-8v16h5v2H7a1 1 0 1 1 0-2h1V2H6Z" clip-rule="evenodd"/>
+          </svg>        
+            <span class="link hide">Vedas</span>
+            <span class="tooltip__content">Vedas</span>
+          </a>
+        </li>
+          <li><a href="#ayurvedic-granths" class="tooltip"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M6 2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 1 0 0-2h-2v-2h2c.6 0 1-.4 1-1V4a2 2 0 0 0-2-2h-8v16h5v2H7a1 1 0 1 1 0-2h1V2H6Z" clip-rule="evenodd"/>
+          </svg>        
+            <span class="link hide">Ayurveda</span>
+            <span class="tooltip__content">AyurVeda</span>
+          </a>
+        </li>
+          <li><a href="#niti-shashtra-scripture" class="tooltip">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M6 2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 1 0 0-2h-2v-2h2c.6 0 1-.4 1-1V4a2 2 0 0 0-2-2h-8v16h5v2H7a1 1 0 1 1 0-2h1V2H6Z" clip-rule="evenodd"/>
+            </svg>          
+            <span class="link hide">Niti Shashtra</span>
+            <span class="tooltip__content">Niti Shashtra</span>
+          </a>
+        </li>
+          <li><a href="#puranas" class="tooltip">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M6 2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 1 0 0-2h-2v-2h2c.6 0 1-.4 1-1V4a2 2 0 0 0-2-2h-8v16h5v2H7a1 1 0 1 1 0-2h1V2H6Z" clip-rule="evenodd"/>
+            </svg>          
+            <span class="link hide">Puranas</span>
+            <span class="tooltip__content">Puranas</span>
+          </a>
+        </li>
+        <li><a href="#sikh-granth" class="tooltip">
+          <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M6 2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 1 0 0-2h-2v-2h2c.6 0 1-.4 1-1V4a2 2 0 0 0-2-2h-8v16h5v2H7a1 1 0 1 1 0-2h1V2H6Z" clip-rule="evenodd"/>
+          </svg>          
+          <span class="link hide">Sikhism</span>
+          <span class="tooltip__content">Sikhism</span>
+        </a>
+      </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-content">
+      <div class="menu-icon">
+        <button class="burger" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-close"></i>
+        </button>
+        <aside>
+          <ul>
+            <li><a href="#upanishads" class="tooltip">
+              <span class="link hide">Upanishad</span>
+            </a>
+          </li>
+            <li><a href="#ramayana" class="tooltip">       
+              <span class="link hide">Ramayana</span>
+              
+            </a>
+          </li>
+            <li><a href="#shrimad-bhagvadgita" class="tooltip">
+              <span class="link hide">Bhagvadgita</span>
+            </a>
+          </li>
+            <li><a href="#all-vedas" class="tooltip">
+              <span class="link hide">Vedas</span>
+                         </a>
+          </li>
+            <li><a href="#ayurvedic-granths" class="tooltip">
+              <span class="link hide">Ayurveda</span>
+              
+            </a>
+          </li>
+            <li><a href="#niti-shashtra-scripture" class="tooltip">
+              <span class="link hide">Niti Shashtra</span>
+        
+            </a>
+          </li>
+            <li><a href="#puranas" class="tooltip">          
+              <span class="link hide">Puranas</span>
+              
+            </a>
+          </li>
+          <li><a href="#sikh-granth" class="tooltip">        
+            <span class="link hide">Sikhism</span>  
+          </a>
+        </li>
+          </ul>
+        </aside>
+    </div>
+      <div class="header">
+        <img src="/Assets/Logo/tempLogo.PNG" alt="Logo" class="tempLogo">
+        <img src="/Assets/Light-theme-icon/sun.png" alt="" id="icon" onclick="myFunction()" onmouseover="displayMessage()" onmouseout="hideMessage()">
+        <h1>Read Vedic Scriptures Online</h1>
+    <p>
+      Choose the scripture you want to read
+    </p>
+      </div>
+      <!-- Upanishad Container -->
+    <div id="upanishads" class="container-box" >
+      <h3>Upanishad</h3>
+    <div class="container upanishad-container">
+<div class="upanishad">
+        <a href="/Upanishad/108 Upanishad Part-1.PDF">
+          <img src="/Assets/Upanishad/Upanishad 1.png" alt="108 Upanishad Part-1" />
+        </a>
+        <legend>108 Upanishad <span>(BrahmaVidyaKhand)</span></legend>
+      </div>
+      <div class="upanishad">
+        <a href="/Upanishad/108 Upanishad Part-2.PDF">
+          <img src="/Assets/Upanishad/Upanishad 2.png" alt="108 Upanishad Part-2" />
+        </a>
+        <legend>108 Upanishad <span>(GyanKhand)</span></legend>
+      </div>
+      <div class="upanishad">
+        <a href="/Upanishad/108 Upanishad Part-3.pdf">
+          <img src="/Assets/Upanishad/upanishad -3.png" alt="108 Upanishad Part-3" />
+        </a>
+        <legend>108 Upanishad <span>(SadhnaKhand)</span></legend>
+      </div>
+      <div class="upanishad">
+        <a
+          href="/Upanishad/108-upanishads-with-upanishad-brahmam-commentary.pdf"
+        >
+          <img
+            src="/Assets/Upanishad/Cover.jpg"
+            alt="108-upanishads-with-upanishad-brahmam-commentary"
+          />
+        </a>
+        <legend>Das'Opanishads <span>(With Commentary)</span></legend>
+      </div>
+    </div>
+    </div>
+    
+    <!-- Ramayana Container -->
+    <div id="ramayana" class="container-box">
+      <h3>Ramayana and More</h3>
+    <div class="container ramayan-container">
+      <div class="ramayan1">
+        <a href="/Ramayan and More/Ramayan.pdf">
+          <img src="/Assets/Ramayan/Ramayana.jpg" alt="Ramayana" />
+        </a>
+        <legend>Ramayana</legend>
+      </div>
+      <div class="ramayan2">
+        <a href="/Ramayan and More/RamayanamTamil.pdf">
+          <img src="/Assets/Ramayan/Ramayana-tamil.jpg" alt="Ramayana Tamil" />
+        </a>
+        <legend>Ramayanam Tamil</legend>
+      </div>
+      <div class="ramayan3">
+        <a href="/Ramayan and More/RamcharitmanasHindiAnuvad.pdf">
+          <img
+            src="/Assets/Ramayan/Ramcharitmanas.jpeg"
+            alt="RamcharitmanasHindiAnuvad"
+          />
+        </a>
+        <legend>Shri Ramcharitmanas Hindi Anuvad</legend>
+      </div>
+      <div class="ramayan4">
+        <a href="/Ramayan and More/SriRamchritmanasEnglish.pdf">
+          <img src="/Assets/Ramayan/ramcha.jpg" alt="SriRamchritmanasEnglish" />
+        </a>
+        <legend>Shri Ramcharitmanas English</legend>
+      </div>
+      <div class="ramayan5">
+        <a href="/Ramayan and More/sunderkand-hindi.pdf">
+          <img
+            src="/Assets/Ramayan/Sunderkand-hindi.png"
+            alt="sunderkand-hindi"
+          />
+        </a>
+        <legend>Sunderkand Hindi</legend>
+      </div>
+      <div class="ramayan6">
+        <a href="/Ramayan and More/Sunderkand_Path.pdf">
+          <img
+            src="/Assets/Ramayan/Sunderkand-english.jpg"
+            alt="Sunderkand_Path"
+          />
+        </a>
+        <legend>Sunderkand Path</legend>
+      </div>
+    </div>
+    
+
+    </div>
+    
+    <!-- Shrimad BhagvadGita  -->
+    <div id="shrimad-bhagvadgita" class="container-box">
+      <h3>Shirmad BhagvadGita</h3>
+    <div class="container BhagvadGita-container">
+      <div class="bhagvadgita1">
+        <a href="/Shrimad BhagvatGita/Shreemadbhagvat geeta.pdf">
+          <img
+            src="/Assets/Shrimad-Bhagvadgita/GitaPress(mote akshar  wali).jpg"
+            alt="Shrimad-Bhagvadgita Hindi"
+          />
+        </a>
+        <legend>Shrimad BhagvadGita<span>Gita Press</span></legend>
+      </div>
+      <div class="bhagvadgita2">
+        <a href="/Shrimad BhagvatGita/Copy of GeetaEnglish.pdf">
+          <img
+            src="/Assets/Shrimad-Bhagvadgita/EnglishGita-GitaPress.jpg"
+            alt="Gita English"
+          />
+        </a>
+        <legend>
+          Shrimad BhagvadGita <span>(English)</span> <span>Gita Press</span>
+        </legend>
+      </div>
+      <div class="bhagvadgita3">
+        <a href="/Shrimad BhagvatGita/Copy of GeetaPunjabi.pdf">
+          <img
+            src="/Assets/Shrimad-Bhagvadgita/bhagavad-gita-as-it-is-punjabi-language.webp"
+            alt="Gita Punjabi"
+          />
+        </a>
+        <legend>Shrimad BhagvadGita <span>(Punjabi)</span></legend>
+      </div>
+      <div class="bhagvadgita4">
+        <a href="/Shrimad BhagvatGita/Bhagavad_Gita_tamil.pdf">
+          <img
+            src="/Assets/Shrimad-Bhagvadgita/Tamil-Bhagavad-gita.jpg "
+            alt="Gita Tamil"
+          />
+        </a>
+        <legend>Shrimad BhagvadGita <span>(Tamil)</span></legend>
+      </div>
+      <div class="bhagvadgita5">
+        <a href="/Shrimad BhagvatGita/Moksha_Gita_Eng_Sanskrit.pdf">
+          <img
+            src="/Assets/Shrimad-Bhagvadgita/Moksha Gita.jpg"
+            alt="Moksha Gita"
+          />
+        </a>
+        <legend>The Moksha Gita <span>by Swami Sivananda</span></legend>
+      </div>
+      <div class="bhagvadgita6">
+        <a href="/Shrimad BhagvatGita/Mahabhart.pdf">
+          <img
+            src="/Assets/Shrimad-Bhagvadgita/Mahabharata Adiparva.jpg"
+            alt="Mahabharata Adiparva"
+          />
+        </a>
+        <legend>Sankshipt Mahabharata <span>(AdiParva)</span></legend>
+      </div>
+    </div>
+    </div>
+    
+    <!-- Vedas Container -->
+    <div id="all-vedas" class="container-box">
+      <h3>Vedas</h3>
+    <div class="container vedas-container">
+      <div class="vedas">
+        <a href="/Vedas/Rig Ved English.pdf">
+          <img src="/Assets/Vedas/Rigved.jpg" alt="Rig Veda English" />
+        </a>
+        <legend>Rig Veda <span>(English)</span></legend>
+      </div>
+      <div class="vedas">
+        <a href="/Vedas/Rig ved hindi-sankrit.pdf">
+          <img
+            src="/Assets/Vedas/rig veda h0s.png"
+            alt="RigVeda Dr.Ganga Sahay Sharma"
+          />
+        </a>
+        <legend>Rig Veda <span>(Dr.Ganga Sahay Sharma)</span></legend>
+      </div>
+      <div class="vedas">
+        <a href="/Vedas/RigVed.pdf">
+          <img src="/Assets/Vedas/rigvedhindi.webp" alt="Rigveda Samhita" />
+        </a>
+        <legend>Rig Veda Samhita</legend>
+      </div>
+      <div class="vedas">
+        <a href="/Vedas/SamVed.pdf">
+          <img src="/Assets/Vedas/samved.webp" alt="SamVed" />
+        </a>
+        <legend>Sam Veda</legend>
+      </div>
+      <div class="vedas">
+        <a href="/Vedas/samved-sanskrit-hindi.pdf">
+          <img
+            src="/Assets/Vedas/samved h-s.png"
+            alt="Samveda Dr. Ganga Sahay Sharma"
+          />
+        </a>
+        <legend>Sam Veda<span>(Dr. Ganga Sahay Sharma)</span></legend>
+      </div>
+      <div class="vedas">
+        <a href="/Vedas/YajurVed.pdf">
+          <img
+            src="/Assets/Vedas/Yajur ved sanhita.png"
+            alt="YajurVed Samhita"
+          />
+        </a>
+        <legend>Yajur Veda Samhita</legend>
+      </div>
+      <div class="vedas">
+        <a href="/Vedas/Atharva ved hindi-sanskrit.pdf">
+          <img src="/Assets/Vedas/atharva veda h-s.png" alt="AtharvaVed" />
+        </a>
+        <legend>Atharva Veda <span>(Dr. Ganga Sahay Sharma)</span></legend>
+      </div>
+      <div class="vedas">
+        <a href="/Vedas/Atharva Ved Sanskrit-hindi.pdf">
+          <img
+            src="/Assets/Vedas/athrvaved sanhita yug nirmad.png"
+            alt="Atharva Ved Yug Nirmad Yojna"
+          />
+        </a>
+        <legend>
+          Atharva Veda Samhita<span>(Yug Nirmad Yojna, Mathura)</span>
+        </legend>
+      </div>
+      <div class="vedas">
+        <a href="/Vedas/AtharvaVed English.pdf">
+          <img
+            src="/Assets/Vedas/atharva ved english.jpg"
+            alt="AtharvaVed English"
+          />
+        </a>
+        <legend>Atharva Veda <span>(English)</span></legend>
+      </div>
+      <div class="vedas">
+        <a href="/Vedas/AtharvaVed-1.pdf">
+          <img
+            src="/Assets/Vedas/atharva hindi.webp"
+            alt="AtharvaVed Samhita"
+          />
+        </a>
+        <legend>Atharva Veda Samhita</legend>
+      </div>
+      <div class="vedas">
+        <a href="/Vedas/AtharvaVed-2.pdf">
+          <img
+            src="/Assets/Vedas/atharva veda sanhita.png"
+            alt="AtharvaVed Samhita"
+          />
+        </a>
+        <legend>
+          Atharva Veda Samhita<span>(BrahmaVarchas,Haridwar)</span>
+        </legend>
+      </div>
+    </div>
+    
+
+    </div>
+    
+    <!-- Ayurveda Granths Container -->
+    <div id="ayurvedic-granths" class="container-box">
+      <h3>AyurVeda Granths</h3>
+    <div class="container ayurveda-container">
+      <div class="ayurveda">
+        <a href="/Ayurveda Granths/Vividh_Chikitsa.PDF">
+          <img
+            src="/Assets/Ayurveda/VividhChikitsa.webp"
+            alt="Vividh_Chikitsa"
+          />
+        </a>
+        <legend>
+          Vividh Chikitsa <span>(Hindi)</span>
+        </legend>
+      </div>
+      <div class="ayurveda">
+        <a href="/Ayurveda Granths/Arogyanidhi.pdf">
+          <img
+            src="/Assets/Ayurveda/Arogyanidhi.png"
+            alt="Arogyanidhi"
+          />
+        </a>
+        <legend>
+          Arogya Nidhi <span>(Hindi)</span>
+        </legend>
+      </div>
+      <div class="ayurveda">
+        <a href="/Ayurveda Granths/Arogyanidhi-2.pdf">
+          <img
+            src="/Assets/Ayurveda/Arogyanidi-2.png"
+            alt="Arogyanidhi"
+          />
+        </a>
+        <legend>
+          Arogya Nidhi <span>(Bhag-2)</span>
+        </legend>
+      </div>
+      <div class="ayurveda">
+        <a href="/Ayurveda Granths/SARAL_ROGOPCHAR_gujarati.pdf">
+          <img
+            src="/Assets/Ayurveda/saral-rogopchar.webp"
+            alt="saral-rogochar-gujarati"
+          />
+        </a>
+        <legend>
+          Saral Rogopchar <span>(Gujrati)</span>
+        </legend>
+      </div>
+    </div>    
+
+    </div>
+    
+    <!-- Niti Shashtra Container -->
+    <div id="niti-shashtra-scripture" class="container-box">
+      <h3>Niti Shashtra</h3>
+    <div class="container niti-shashtra-container">
+        <div class="niti-shashtra">
+            <a href="/Niti Shastra/Chanakya Niti Darpan.pdf">
+                <img
+                  src="/Assets/Niti-Shashtra/Chanakyaniti.jpg"
+                  alt="Chanakya Niti"
+                />
+              </a>
+              <legend>
+                Chanakya Niti Darpan <span>(Sanskrit)</span>
+              </legend>
+        </div>
+        <div class="niti-shashtra">
+          <a href="/Niti Shastra/Vidur-Niti_sanskrit.pdf">
+            <img
+              src="/Assets/Niti-Shashtra/vidurniti.png"
+              alt="Vidur-Niti"
+            />
+          </a>
+          <legend>
+            Vidur Niti <span>(Sanskrit Text)</span>
+          </legend>
+        </div>
+    </div>
+    </div>
+    
+    <!-- Purans -->
+    <div id="puranas" class="container-box">
+      <h3>Purana</h3>
+    <div class="container puran-container">
+      <div class="puran">
+        <a href="/Puran Hindi/2 padam-puran.pdf">
+          <img
+            src="/Assets/Puran(hindi)/padam puran-500x500.jpg"
+            alt="padam-puran"
+          />
+        </a>
+        <legend>
+          Padam Purana <span>(Sankshipt)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/7 markende-puran.pdf">
+          <img
+            src="/Assets/Puran(hindi)/Markandeya-Puran.webp"
+            alt="markende-puran"
+          />
+        </a>
+        <legend>
+          Markandeya Purana <span>(Sankshipt)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/11 ling puran.pdf">
+          <img
+            src="/Assets/Puran(hindi)/Ling-purana.webp"
+            alt="ling-puran"
+          />
+        </a>
+        <legend>
+          Ling Purana <span>(Sankshipt)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/17 Garud Puran Gitapress publication.pdf">
+          <img
+            src="/Assets/Puran(hindi)/Garud-Purana.jpg"
+            alt="Garud-Purana"
+          />
+        </a>
+        <legend>
+          Garud Purana <span>(Sankshipt)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/18 brahamand puran-1.pdf">
+          <img
+            src="/Assets/Puran(hindi)/Brahmand-Puran-1.png"
+            alt="brahamand-puran"
+          />
+        </a>
+        <legend>
+          Brahamand Purana<span>(Pratham Khand)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/18 brahamand puran-2.pdf">
+          <img
+            src="/Assets/Puran(hindi)/Brahmand-puran-2.png"
+            alt="brahamand-puran"
+          />
+        </a>
+        <legend>
+          Brahamand Purana <span>(Dwitiya Khand)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/añùañ¦aÑüañú añ¬aÑüañ¦añ+añú .pdf">
+          <img
+            src="/Assets/Puran(hindi)/Garud-purana-saroddhar.jpg"
+            alt="Garud-purana-saroddhar"
+          />
+        </a>
+        <legend>
+          Garud Purana Saroddhar <span>(Sanuvad)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/Brahma Vaivarta Puran - Gita Press Gorakhpur.pdf">
+          <img
+            src="/Assets/Puran(hindi)/brahma-vaivarta-puran.webp"
+            alt="Brahma Vaivarta Puran"
+          />
+        </a>
+        <legend>
+          Brahma Vaivarta Purana <span>(Sankshipt)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/Devi Bhagavata with Hindi Translation Volume 1 Gita Press.pdf">
+          <img
+            src="/Assets/Puran(hindi)/devi-bhagvata-puran-1.jpg"
+            alt="devi-bhagvata-puran-1"
+          />
+        </a>
+        <legend>
+          Shrimad Devi Bhagwat Maha Purana <span>(Pratham Khand)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/Devi Bhagavata with Hindi Translation Volume 2 Gita Press.pdf">
+          <img
+            src="/Assets/Puran(hindi)/devi-bhagvata-puran-2.webp"
+            alt="devi-bhagvata-puran-2"
+          />
+        </a>
+        <legend>
+          Shrimad Devi Bhagwat Maha Purana <span>(Dwitiya Khand)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/deviBhagavataPuranSanskrit.pdf">
+          <img
+            src="/Assets/Puran(hindi)/devi-bhagawat-puran-sanskrit.jpg"
+            alt="devi-bhagawat-puran-sanskrit"
+          />
+        </a>
+        <legend>
+          Shrimad Devi Bhagwat Mahatyamam <span>(Sanskrit)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/Garga Samhita - Gita Press Gorakhpur.pdf">
+          <img
+            src="/Assets/Puran(hindi)/Garga-samhita.png"
+            alt="Garga-Samhita"
+          />
+        </a>
+        <legend>
+          Shri Garga Samhita <span>(Hindi Anuvad)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/kalki puran.pdf">
+          <img
+            src="/Assets/Puran(hindi)/Kalki-puran.jpg"
+            alt="kalki-puran"
+          />
+        </a>
+        <legend>
+          Kalki Purana 
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/Matsya Puran - Gita Press Gorakhpur-010.pdf">
+          <img
+            src="/Assets/Puran(hindi)/matsya-puran.jpg"
+            alt="matsya-puran"
+          />
+        </a>
+        <legend>
+          Matasya Maha Purana <span>(Sanchitra)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/Narada Puran - Gita Press Gorakhpur-001.pdf">
+          <img
+            src="/Assets/Puran(hindi)/naradpuran.webp"
+            alt="naradpuran"
+          />
+        </a>
+        <legend>
+          Narad Purana <span>(Sankshipt)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/Narasimha Puran - Gita Press Gorakhpur.pdf">
+          <img
+            src="/Assets/Puran(hindi)/narsimhapuran.jpg"
+            alt="narsimhapuran"
+          />
+        </a>
+        <legend>
+          Shri NarSimha Purana
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/Shiv MahaPuran part1.pdf">
+          <img
+            src="/Assets/Puran(hindi)/Shiv-puran-1.png"
+            alt="Shiv-puran-1"
+          />
+        </a>
+        <legend>
+          Shri Shiv MahaPurana <span>(Sankhya-1)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/Shiv MahaPuran part2.pdf">
+          <img
+            src="/Assets/Puran(hindi)/Shib-puran-2.png"
+            alt="Shiv-puran"
+          />
+        </a>
+        <legend>
+          Shri Shiv MahaPurana <span>(Sankhya-2)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/Shiv Puran.pdf">
+          <img
+            src="/Assets/Puran(hindi)/Sankshipt Shiv Puran.jpg"
+            alt="Sankshipt Shiv Puran"
+          />
+        </a>
+        <legend>
+          Shiva Purana <span>(Sankshipt)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/Skanda Puran - Gita Press Gorakhpur-009.pdf">
+          <img
+            src="/Assets/Puran(hindi)/skanda-purana.jpg"
+            alt="skanda-purana"
+          />
+        </a>
+        <legend>
+          Skanda Purana <span>(Sankshipt)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/vayu-puran.pdf">
+          <img
+            src="/Assets/Puran(hindi)/vayu-puran.webp"
+            alt="vayu-puran"
+          />
+        </a>
+        <legend>
+          Vayu Purana <span>(Hindi Anuvad)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/Agni Puran - Gita Press Gorakhpur.pdf">
+          <img
+            src="/Assets/Puran(hindi)/Agni-purana.webp"
+            alt="Agni Puran"
+          />
+        </a>
+        <legend>
+          Agni Purana
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/Brahma Puran - Gita Press Gorakhpur.pdf">
+          <img
+            src="/Assets/Puran(hindi)/brahma-puran.webp"
+            alt="Brahma puran"
+          />
+        </a>
+        <legend>
+          Brahma Purana <span>(Sankshipt)</span>
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/Kurma Puran - Gita Press Gorakhpur.pdf">
+          <img
+            src="/Assets/Puran(hindi)/Kurma-puran.webp"
+            alt="Kurma-Purana"
+          />
+        </a>
+        <legend>
+          Kurma Purana
+        </legend>
+      </div>
+      <div class="puran">
+        <a href="/Puran Hindi/2 padam-puran.pdf">
+          <img
+            src="/Assets/Puran(hindi)/padam puran-500x500.jpg"
+            alt="padam-puran"
+          />
+        </a>
+        <legend>
+          Padam Puran <span>(Sankshipt)</span>
+        </legend>
+      </div>
+    </div>
+    
+    </div>
+    <!-- Sikh Granths -->
+    <div id="sikh-granth" class="container-box">
+      <h3>Sikh Guru's & Granths</h3>
+    <div class="container Sikhgranth-container">
+        <div class="sikh">
+          <a href="/Sikh Guru/Guru Granth Sahib Detail.pdf">
+            <img
+              src="/Assets/Sikh/GuruGranth.png"
+              alt="Guru Granth Sahib"
+            />
+          </a>
+          <legend>
+            Guru Granth Sahib <span>(Jaan-Pehchan)</span>
+          </legend>
+        </div>
+        <div class="sikh">
+          <a href="/Sikh Guru/Guru Granth Sahib Ji in Hindi.pdf">
+            <img
+              src="/Assets/Sikh/GuruGranthSahibHindi.jpeg"
+              alt="Guru Granth Sahib (Hindi)"
+            />
+          </a>
+          <legend>
+            Guru Granth Sahib <span>(Hindi)</span>
+          </legend>
+        </div>
+        <div class="sikh">
+          <a href="/Sikh Guru/guru-granth-sahib-ji-1430-page-orignal.pdf">
+            <img
+              src="/Assets/Sikh/Guru Granth Sahib Original.jpg"
+              alt="Guru Granth Sahib"
+            />
+          </a>
+          <legend>
+            Guru Granth Sahib Ji<span>(Original)</span>
+          </legend>
+        </div>  
+        <div class="sikh">
+          <a href="/Sikh Guru/Siri Guru Granth Sahib in Gurmukhi, with Index (Uni).pdf">
+            <img
+              src="/Assets/Sikh/SHRI-GURU-GRANTH-SAHIB-JI in Gurmukhi.png"
+              alt="Guru Granth Sahib Gurmukhi"
+            />
+          </a>
+          <legend>
+            Guru Granth Sahib<span> (Gurmukhi)</span>
+          </legend>
+        </div>
+        <div class="sikh">
+          <a href="/Sikh Guru/siri-guru-granth-sahib-in-hindi.pdf">
+            <img
+              src="/Assets/Sikh/Guru granth SAhib in Hindi original.jpeg"
+              alt="Guru Granth Sahib Original Hindi"
+            />
+          </a>
+          <legend>
+            Guru Granth Sahib Original <span>(Hindi)</span>
+          </legend>
+        </div>
+        <div class="sikh">
+          <a href="/Sikh Guru/Baba_Deep_Singh.pdf">
+            <img
+              src="/Assets/Sikh/Baba Deep SIngh.jpg"
+              alt="Baba Deep Singh"
+            />
+          </a>
+          <legend>
+            Baba Deep Singh Ji <span></span>
+          </legend>
+        </div>
+        <div class="sikh">
+          <a href="/Sikh Guru/Banda_Singh_Bahudar.pdf">
+            <img
+              src="/Assets/Sikh/BandaSInghBahadur.png"
+              alt="Banda_Singh_Bahudar"
+            />
+          </a>
+          <legend>
+            Jathedar Banda Singh Bahudar <span></span>
+          </legend>
+        </div>
+        <div class="sikh">
+          <a href="/Sikh Guru/Guru Amar Das g3.pdf">
+            <img
+              src="/Assets/Sikh/guru amar das ji.png"
+              alt="Guru Amar Das ji"
+            />
+          </a>
+          <legend>
+          Shri Guru Amar Das Ji<span></span>
+          </legend>
+        </div>
+        <div class="sikh">
+          <a href="/Sikh Guru/Guru Angad g2.pdf">
+            <img
+              src="/Assets/Sikh/guruangadsdevji.png"
+              alt="Guru Angad Dev Ji"
+            />
+          </a>
+          <legend>
+            Shri Guru Angad Dev Ji <span></span>
+          </legend>
+        </div>
+        <div class="sikh">
+          <a href="/Sikh Guru/Guru Arjan g5.pdf">
+            <img
+              src="/Assets/Sikh/guruarjandevji.png"
+              alt="Shri Guru Arjan Dev"
+            />
+          </a>
+          <legend>
+            Shri Guru Arjan Dev Ji <span></span>
+          </legend>
+        </div>
+        <div class="sikh">
+          <a href="/Sikh Guru/Guru Gobind Singh Ji g10.pdf">
+            <img
+              src="/Assets/Sikh/guruGOBINDji.png"
+              alt="Shri Guru Gobind Singh"
+            />
+          </a>
+          <legend>
+            Shri Guru Gobind Singh Ji <span></span>
+          </legend>
+        </div>
+        <div class="sikh">
+          <a href="/Sikh Guru/Guru Har Gobind g6 1 part .pdf">
+            <img
+              src="/Assets/Sikh/guru Har gobind sahib ji.png"
+              alt="Guru Har Gobind"
+            />
+          </a>
+          <legend>
+            Shri Guru Har Gobind Sahib Ji <span></span>
+          </legend>
+        </div>
+        <div class="sikh">
+          <a href="/Sikh Guru/Guru Har Krishan g8.pdf">
+            <img
+              src="/Assets/Sikh/Guru HariKrishan Ji.png"
+              alt="Shri Guru HariKishan Sahib "
+            />
+          </a>
+          <legend>
+            Shri Guru Har Krishan Sahib Ji <span></span>
+          </legend>
+        </div>
+        <div class="sikh">
+          <a href="/Sikh Guru/Guru Har Rai g7.pdf">
+            <img
+              src="/Assets/Sikh/Guru Har rai.png"
+              alt="Shri Guru Hari Rai"
+            />
+          </a>
+          <legend>
+            Shri Guru Hari Rai Ji <span></span>
+          </legend>
+        </div>
+        <div class="sikh">
+          <a href="/Sikh Guru/Guru Nanak g1.pdf">
+            <img
+              src="/Assets/Sikh/Guru Nanak.png"
+              alt="Guru Nanak"
+            />
+          </a>
+          <legend>
+            Shri Guru Nanak Dev Ji <span></span>
+          </legend>
+        </div>
+        <div class="sikh">
+          <a href="/Sikh Guru/Guru Ram Das g4.pdf">
+            <img
+              src="/Assets/Sikh/Guru Ram Das.png"
+              alt="Shri Guru Ram Das"
+            />
+          </a>
+          <legend>
+            Shri Guru Ram Das Ji <span></span>
+          </legend>
+        </div>
+        <div class="sikh">
+          <a href="/Sikh Guru/Guru Tegh Bahadur g9.pdf">
+            <img
+              src="/Assets/Sikh/Guru Teg Bahadur Ji.png"
+              alt="Shri Guru Teg Bahadur"
+            />
+          </a>
+          <legend>
+            Shri Guru Teg Bahadur Ji <span></span>
+          </legend>
+    </div>
+    </div>
+    
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+  </body>
+</html>
