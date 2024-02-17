@@ -69,3 +69,4 @@ function displayMessage() {
       message.remove();
     }
   }
+  
