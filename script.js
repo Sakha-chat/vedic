@@ -45,9 +45,9 @@ toggle.onclick = function() {
   toggle.classList.toggle("active");
   body.classList.toggle("light-mode");
   if (body.classList.contains("light-mode")) {
-    icon.src = "Assets/sun.png";
+    icon.src = "/Assets/sun.png";
   } else {
-    icon.src = "Assets/moon.png";
+    icon.src = "/Assets/moon.png";
   }
 }
 

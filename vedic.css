@@ -21,6 +21,7 @@ body {
     padding: 0;
     background-color: var(--primary-background-color);
 	user-select: none;
+    transition: 0.5s;
 }
 
 html{
