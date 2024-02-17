@@ -40,9 +40,9 @@ function myFunction() {
   let element = document.body;
   element.classList.toggle("light-mode");
   if (element.classList.contains("light-mode")) {
-    icon.src = "/Assets/Light-theme-icon/moon.png";
+    icon.src = "/Assets/moon.png";
   } else {
-    icon.src = "/Assets/Light-theme-icon/sun.png"
+    icon.src = "/Assets/sun.png"
   }
 }
 function displayMessage() {
