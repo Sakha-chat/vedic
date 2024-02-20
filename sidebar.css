@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 :root {
-	--background: #f3f5f6;
 	--text-link: #ffffff;
 	--search-background:#2b2b2f;
 	--primary-text-color:#f47f16;
 }
-
+.light-mode{
+    --primary-background-color:#f3f5f6;
+    --text-link:#181717;
+    --box-shadow-color:#d9d9d9;
+}
 body.collapsed .sidebar{
 	max-width: 5rem;
 	display: flex;
@@ -28,7 +31,7 @@ body.collapsed .sidebar{
 	max-width: 12rem;
 	min-width: 4rem;
 	display: flex;
-	color: var(--white);
+	color: var(--text-link);
 	flex-direction: column;
 	flex: 0 0 18rem;
 	background-color: transparent;
@@ -81,7 +84,7 @@ body.collapsed .sidebar{
 	align-items: start;
 	justify-content: center;
 	flex-direction: column;
-	overflow: hidden;
+	overflow:visible;
 	height: 4rem;
 	padding-bottom: 1rem;
   }
@@ -106,7 +109,6 @@ body.collapsed .sidebar{
   
   .company-name {
 	white-space: nowrap;
-	color: var(--text-link);
   }
   
   .sidebar-links {

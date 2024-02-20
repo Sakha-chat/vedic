@@ -131,7 +131,7 @@ legend {
 }
 
 a {
-    color: #333;
+    color: var(--text-link);
     text-decoration: none;
     display: block;
     padding: 10px;
