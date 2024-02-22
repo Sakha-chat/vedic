@@ -111,7 +111,7 @@ p {
     height: 280px; 
 	max-width: 100%;
     object-fit:cover; 
-    border:3px solid var(--primary-text-color);
+    border:5px solid var(--primary-text-color);
     border-radius: 8px;
     transition: transform 0.3s ease;
 	filter: brightness(70%);
