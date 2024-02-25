@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-* {
-	margin:0;
-	padding: 0;
-    box-sizing: border-box;
-}
 :root{
     --primary-text-color:#f47f16;
     --primary-background-color:#181717;
@@ -30,14 +25,18 @@ html{
 }
 .main-container {
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
-  
 .main-content {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
     flex: 1; 
     padding: 1.5rem; 
+    overflow: hidden;
 }
 .header{
     display: flex;
@@ -59,77 +58,12 @@ h1 {
 	object-fit: cover;
 	margin: 0;
   }
-h3 {
-	position: sticky;
-	margin: 0;
-	font-size: 1.5rem;
-    padding: 10px;
-    text-align: center;
-    color: var(--primary-text-color);
-	background-color: transparent; 
-}
-
 p {
 	color: var(--text-link);
     padding: 20px;
     font-size: 18px;
     text-align: center;
 }
-.container-box {
-	height: 420px;
-    margin-bottom: 30px;
-    background-color: transparent;
-    border-radius: 16px;
-    overflow-y: scroll;
-	scrollbar-color: rgba(255,255,255,0.5) var(--box-shadow-color) ;
-    scrollbar-width: thin;
-    scroll-behavior: smooth;
-    box-shadow: 1px 2px 5px 8px  var(--box-shadow-color);
-}
-#niti-shashtra-scripture{
-    overflow: hidden;
-}
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding:20px;
-	width: 100%;
-}
-.container > div {
-    flex: 0 1 calc(33.333% - 20px);
-    max-width: calc(33.333% - 20px);
-    text-align: center;
-    background-color: transparent;
-    border-radius: 16px;
-    overflow: hidden;
-}
-
-.container img {
-    width: 200px;
-    height: 280px; 
-	max-width: 100%;
-    object-fit:cover; 
-    border:5px solid var(--primary-text-color);
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-	filter: brightness(70%);
-    box-shadow: 5px 5px 2px var(--box-shadow-color);
-}
-
-.container img:hover {
-    transform: scale(1.05);
-	filter: none; 
-}
-
-legend {
-	margin: 0;
-	color:var(--primary-text-color);
-    font-size: 16px;
-    padding: 10px;
-}
-
 a {
     color: var(--text-link);
     text-decoration: none;
@@ -190,38 +124,14 @@ a {
     color: var(--text-link);
     z-index: 9999;
   }
-@media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
 	.main-content {
 	  padding: 0.5rem;
 	}
-  
-	.container > div {
-	  flex: 0 1 calc(50% - 20px);
-	  max-width: calc(50% - 20px);
-	}
-    .myBtn{
-        display: none;
-    }
-    #niti-shashtra-scripture{
-        overflow-y: scroll;
-    }
   }
   
   @media only screen and (max-width: 576px) {
 	.main-content {
 	  padding: 0.3rem;
 	}
-    .container-box{
-        margin: 30px;
-    }
-	.container > div {
-	  flex: 1 1 95%;
-	  max-width: 95%;
-	}
-    .myBtn{
-        display: none;
-    }
-    #niti-shashtra-scripture{
-        overflow-y: scroll;
-    }
   }
