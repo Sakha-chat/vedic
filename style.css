@@ -115,12 +115,18 @@ section{
 .owl-dots .owl-dot.active {
   background: #f44336 !important;
 }
+.slider-card h5{
+  text-align: center;
+}
 
 /* Media query for screens smaller than 600px */
 @media (max-width: 600px) {
   .container {
     margin: 20px;
     padding: 20px;
+  }
+  .slider-card h5{
+    text-align: center;
   }
   
 }
@@ -130,5 +136,8 @@ section{
   .container {
     margin: 30px;
     padding: 30px;
+}
+.slider-card h5{
+  text-align: center;
 }
 }
