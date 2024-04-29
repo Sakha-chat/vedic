@@ -36,6 +36,8 @@ body.collapsed .sidebar{
 	flex: 0 0 18rem;
 	background-color: transparent;
 	transition: max-width 0.2s ease-in-out;
+	scroll-behavior: smooth;
+	overflow-y: auto;
   }
   .logo__wrapper{
 	display: flex;
