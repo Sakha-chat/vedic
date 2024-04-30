@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 :root {
-	--text-link: #ffffff;
-	--search-background:#2b2b2f;
+	--text-link: #181717;
+	--search-background:#f3f5f6;
 	--primary-text-color:#f47f16;
 }
-.light-mode{
-    --primary-background-color:#f3f5f6;
-    --text-link:#181717;
-    --box-shadow-color:#d9d9d9;
+.dark-mode{
+    --primary-background-color:#181717;
+    --text-link:#f3f5f6;
+    --box-shadow-color:#080807;
+	--search-background:#080807;
 }
 body.collapsed .sidebar{
 	max-width: 5rem;
@@ -36,7 +37,6 @@ body.collapsed .sidebar{
 	flex: 0 0 18rem;
 	background-color: transparent;
 	transition: max-width 0.2s ease-in-out;
-	scroll-behavior: smooth;
 	overflow-y: auto;
   }
   .logo__wrapper{
@@ -132,7 +132,7 @@ body.collapsed .sidebar{
   }
   
   .sidebar-links li svg {
-	stroke: var(--text-link);
+	stroke: var(--search-background);
 	width: 1.75rem;
 	height: 1.75rem;
 	min-width: 1.75rem;

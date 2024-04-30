@@ -6,14 +6,14 @@
 }
 :root{
   --primary-text-color:#f47f16;
-  --primary-background-color:#181717;
-  --text-link: #ffffff;
-  --box-shadow-color:#080807;
-}
-.light-mode{
-  --primary-background-color:#f3f5f6;
-  --text-link:#181717;
+  --primary-background-color:#ffffff;
+  --text-link: #181717;
   --box-shadow-color:#d9d9d9;
+}
+.dark-mode{
+  --primary-background-color:#181717;
+  --text-link:#ffffff;
+  --box-shadow-color:#080807;
 }
 html {
   height: 100%;
@@ -26,6 +26,8 @@ body {
     background-color: var(--primary-background-color);
 	user-select: none;
     transition: 0.5s;
+    display:flex;
+    flex-direction: row;
 }
 section{
   height: auto;

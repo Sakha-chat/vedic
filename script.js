@@ -21,15 +21,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   toggle.addEventListener("click", () => {
     toggle.classList.toggle("active");
-    body.classList.toggle("light-mode");
-    icon.src = body.classList.contains("light-mode") ? "Assets/sun.png" : "Assets/moon.png";
+    body.classList.toggle("dark-mode");
+    icon.src = body.classList.contains("dark-mode") ? "Assets/sun.png" : "Assets/moon.png";
   });
 
   const body = document.querySelector('body');
 
   function displayMessage() {
     const message = document.createElement("div");
-    message.textContent = body.classList.contains("light-mode") ? "Switch to dark mode" : "Switch to light mode";
+    message.textContent = body.classList.contains("dark-mode") ? "Switch to dark mode" : "Switch to dark mode";
     message.classList.add("hover-message");
     document.body.appendChild(message);
   }
